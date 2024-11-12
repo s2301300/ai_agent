@@ -6,13 +6,6 @@ import joblib
 # model = joblib.load('linear_regression_model.pkl')
 
 # 2.모델 설명
-st.title('행복도 예측 모델')
-st.subheader('모델 설명')
-st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
-st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
-st.write(' - 훈련    데이터 : *건')
-st.write(' - 테스트 데이터 : *건')
-st.write(' - 인공지능 모델 정확도 : ***')
 def add_box(text, opacity=1.0):
     st.markdown(
         f"""
@@ -23,6 +16,14 @@ def add_box(text, opacity=1.0):
         unsafe_allow_html=True
     )
 add_box("test", opacity=0.5)  # 80% 불투명도
+st.title('행복도 예측 모델')
+st.subheader('모델 설명')
+add_box(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
+st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
+st.write(' - 훈련    데이터 : *건')
+st.write(' - 테스트 데이터 : *건')
+st.write(' - 인공지능 모델 정확도 : ***')
+
 
 def add_bg_from_url():
     st.markdown(
