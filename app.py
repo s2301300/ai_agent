@@ -13,6 +13,16 @@ st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
 st.write(' - 훈련    데이터 : *건')
 st.write(' - 테스트 데이터 : *건')
 st.write(' - 인공지능 모델 정확도 : ***')
+def add_box(text):
+    st.markdown(
+        f"""
+        <div style="border: 2px solid #4CAF50; border-radius: 5px; padding: 10px; background-color: #f9f9f9;">
+            <h4>{text}</h4>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+add_box('test')
 
 def add_bg_from_url():
     st.markdown(
