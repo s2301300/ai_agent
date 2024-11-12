@@ -6,19 +6,9 @@ import joblib
 # model = joblib.load('linear_regression_model.pkl')
 
 # 2.모델 설명
-def add_box(text, opacity=1.0):
-    st.markdown(
-        f"""
-        <div style="border: 0px solid #4CAF50; border-radius: 5px; padding: 10px; background-color: rgba(153, 153, 153, {opacity});">
-            <h4>{text}</h4>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-add_box("test", opacity=0.5)  # 80% 불투명도
 st.title('행복도 예측 모델')
 st.subheader('모델 설명')
-add_box(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
+st.write(' - 기계학습 알고리즘 : 로지스틱 회귀 ')
 st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
 st.write(' - 훈련    데이터 : *건')
 st.write(' - 테스트 데이터 : *건')
@@ -30,7 +20,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://images.inc.com/uploaded_files/image/1024x576/getty_478389113_970647970450091_99776.jpg");  # 여기에 복사한 링크를 붙여넣기
+            background-image: url("https://images2.minutemediacdn.com/image/upload/c_fill,w_752,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/istock-508455188-033183f45ba393ed4745b2dd1213c390.jpg");  # 여기에 복사한 링크를 붙여넣기
             background-attachment: fixed;
             background-size: cover;
         }}
