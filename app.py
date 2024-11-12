@@ -16,13 +16,13 @@ st.write(' - 인공지능 모델 정확도 : ***')
 def add_box(text):
     st.markdown(
         f"""
-        <div style="border: 2px solid #4CAF50; border-radius: 5px; padding: 10px; background-color: #f9f9f9;">
+        <div style="border: 0px solid #999999; border-radius: 5px; padding: 10px; background-color: #999999;">
             <h4>{text}</h4>
         </div>
         """,
         unsafe_allow_html=True
     )
-add_box('test')
+add_box('test', opacity=0.8)
 
 def add_bg_from_url():
     st.markdown(
