@@ -22,7 +22,7 @@ def add_box(text, opacity=1.0):
         """,
         unsafe_allow_html=True
     )
-add_box("test", opacity=0.8)  # 80% 불투명도
+add_box("test", opacity=0.5)  # 80% 불투명도
 
 def add_bg_from_url():
     st.markdown(
