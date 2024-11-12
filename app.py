@@ -30,12 +30,12 @@ with col3:
 st.subheader('모델 활용')
 st.write('**** 다음을 입력하세요.. 인공지능이 당신의 행복도를 예측해 드립니다.')
 
-a = st.number_input(' 목적없는 사용 ', value=0, [0,5])      #초기값은 0
-b = st.number_input(' 방해 ', value=0, [0,5] )     # 초기값은 0.0
-c = st.number_input(' 의존도 ', value=0, [0,5] )
-d = st.number_input(' 비교 ', value=0, [0,5] )
-e = st.number_input(' 확인빈도 ', value=0, [0,5] )
-f = st.number_input(' 우울 ', value=0, [0,5] )
+a = st.selectbox(' 목적없는 사용 ', value=0, [0,5])      #초기값은 0
+b = st.selectbox(' 방해 ', value=0, [0,5] )     # 초기값은 0.0
+c = st.selectbox(' 의존도 ', value=0, [0,5] )
+d = st.selectbox(' 비교 ', value=0, [0,5] )
+e = st.selectbox(' 확인빈도 ', value=0, [0,5] )
+f = st.selectbox(' 우울 ', value=0, [0,5] )
                                                             # 사용자가  0,1 중에 선택
 
 #if st.button('행복도 예측'):            # 사용자가 '점수예측' 버튼을 누르면
