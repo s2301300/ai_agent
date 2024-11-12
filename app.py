@@ -14,6 +14,22 @@ st.write(' - 훈련    데이터 : *건')
 st.write(' - 테스트 데이터 : *건')
 st.write(' - 인공지능 모델 정확도 : ***')
 
+def add_bg_from_url():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("https://images.inc.com/uploaded_files/image/1024x576/getty_478389113_970647970450091_99776.jpg");  # 여기에 복사한 링크를 붙여넣기
+            background-attachment: fixed;
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+add_bg_from_url()
+
 # 3.데이터 시각화
 col1, col2, col3 = st.columns(3)  
 with col1:
