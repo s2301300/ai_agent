@@ -16,7 +16,7 @@ st.write(' - 인공지능 모델 정확도 : ***')
 def add_box(text, opacity=1.0):
     st.markdown(
         f"""
-        <div style="border: 2px solid #4CAF50; border-radius: 5px; padding: 10px; background-color: rgba(249, 249, 249, {opacity});">
+        <div style="border: 0px solid #4CAF50; border-radius: 5px; padding: 10px; background-color: rgba(153, 153, 153, {opacity});">
             <h4>{text}</h4>
         </div>
         """,
