@@ -47,12 +47,12 @@ with col3:
 st.subheader('모델 활용')
 st.write('**** 다음을 입력하세요.. 인공지능이 당신의 우울도를 예측해 드립니다.')
 
-a = st.selectbox(' 시간 ', [0,1,2,3,4,5])      #초기값은 0
-b = st.selectbox(' 목적없는 사용 ', [0,1,2,3,4,5] )     # 초기값은 0.0
-c = st.selectbox(' 방해 ', [0,1,2,3,4,5] )
-d = st.selectbox(' 의존도 ', [0,1,2,3,4,5] )
-e = st.selectbox(' 비교 ', [0,1,2,3,4,5] )
-f = st.selectbox(' 확인빈도 ', [0,1,2,3,4,5])
+a = st.selectbox(' SNS 사용시간 ', [0,1,2,3,4,5])      #초기값은 0
+b = st.selectbox(' 목적없는 SNS 사용 ', [0,1,2,3,4,5] )     # 초기값은 0.0
+c = st.selectbox(' SNS에게 방해받는 정도 ', [0,1,2,3,4,5] )
+d = st.selectbox(' SNS 의존도 ', [0,1,2,3,4,5] )
+e = st.selectbox(' SNS를 통한 비교 ', [0,1,2,3,4,5] )
+f = st.selectbox(' SNS 확인빈도 ', [0,1,2,3,4,5])
                                                             # 사용자가  0,1 중에 선택
 
 if st.button('우울도 예측'):            # 사용자가 '점수예측' 버튼을 누르면
