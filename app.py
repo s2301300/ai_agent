@@ -20,7 +20,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://ae01.alicdn.com/kf/S0d1f802cfaeb4fffad023e9651c5daadL.png");  # 여기에 복사한 링크를 붙여넣기
+            background-image: url("https://blog.kakaocdn.net/dn/ljADE/btr9QT40dZB/tzTVb1j4Jav4NptCdmfZMk/img.jpg");  # 여기에 복사한 링크를 붙여넣기
             background-attachment: fixed;
             background-size: cover;
         }}
