@@ -52,10 +52,9 @@ b = st.selectbox(' 방해 ', [0,1,2,3,4,5] )     # 초기값은 0.0
 c = st.selectbox(' 의존도 ', [0,1,2,3,4,5] )
 d = st.selectbox(' 비교 ', [0,1,2,3,4,5] )
 e = st.selectbox(' 확인빈도 ', [0,1,2,3,4,5] )
-f = st.selectbox(' 우울 ', [0,1,2,3,4,5] )
                                                             # 사용자가  0,1 중에 선택
 
 if st.button('행복도 예측'):            # 사용자가 '점수예측' 버튼을 누르면
-        input_data = [[a,b,c,d,e,f]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
+        input_data = [[a,b,c,d,e]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
         p = model.predict(input_data)         # model이 예측한 값을 p에 저장한다
         st.write('인공지능의 예측 점수는', p)
