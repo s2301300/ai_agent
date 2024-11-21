@@ -32,7 +32,7 @@ def add_bg_from_url():
 add_bg_from_url()
 
 # 3.데이터 시각화
-col1, col2, col3 = st.columns(3)  
+col1, col2 = st.columns(2)  
 with col1:
       st.subheader('데이터시각화1')
       st.image('시각화1.png' )   # 이미지 불러오기
