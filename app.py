@@ -55,7 +55,7 @@ f = st.selectbox(' SNS 확인빈도 ', [0,1,2,3,4,5])
 if st.button('우울도 예측'):  # 사용자가 '우울도 예측' 버튼을 누르면
     input_data = [[a, b, c, d, e, f]]  # 사용자가 입력한 a, b, c 등을 input_data에 저장하고
     p = model.predict(input_data)  # model이 예측한 값을 p에 저장한다
-    st.write(f"인공지능 예측점수는 {p}점 입니다.")
+    st.write(f"인공지능 예측점수는 {p}점 입니다. (0.5 ~ 4.7점 중 하나의 수로 나옴. 점수가 높을수록 우울도가 높은것임.)")
 
     if p < 1:  # p가 1보다 작으면
         st.write('당신은 지금 행복해보여요 지금처럼만 사세요 ^^')
