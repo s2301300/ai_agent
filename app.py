@@ -59,4 +59,4 @@ if st.button('우울도 예측'):            # 사용자가 '점수예측' 버�
         input_data = [[a,b,c,d,e,f]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
         p = model.predict(input_data)         # model이 예측한 값을 p에 저장한다
         roundedp = round(p, 2)
-        st.write(f"인공지능 예측점수는 {roundp}점 입니다.")
+        st.write(f"인공지능 예측점수는 {roundedp}점 입니다.")
